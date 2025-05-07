@@ -2,8 +2,12 @@ package com.example.minhasreceitas
 
 import android.os.Build
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.core.view.MenuProvider
 import com.example.minhasreceitas.databinding.ActivityDetalhesBinding
 
 
@@ -16,6 +20,8 @@ class DetalhesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        inicializarActionBar()
 
         with( binding ){
 
@@ -62,21 +68,35 @@ class DetalhesActivity : AppCompatActivity() {
 
                     textPreparo.text = textoPreparo
 
-
                 }
-
-
             }
-
-            btnVoltar.setOnClickListener { finish() }
-
 
 
         }
 
 
 
+    }
 
+    private fun inicializarActionBar() {
+
+        addMenuProvider(
+            object: MenuProvider{
+                override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
+                    menuInflater.inflate(R.menu.menu_principal, menu)
+                }
+
+                override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
+                    when (menuItem.itemId) {
+                        R.id.itemSair -> finish()
+                    }
+                    return true
+                }
+
+            }
+        )
 
     }
+
+
 }
