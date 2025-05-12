@@ -2,25 +2,26 @@ package com.example.minhasreceitas
 
 import android.content.Intent
 import android.os.Bundle
-
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.WindowCompat
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.minhasreceitas.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var rvReceitas: RecyclerView
+    private val binding by lazy {
+        ActivityMainBinding.inflate( layoutInflater )
+    }
+
     private lateinit var receitasAdapter: ReceitasAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(binding.root)
 
 
-        rvReceitas = findViewById( R.id.rvReceitas )
 
         val list = listOf(
             Receita("Escondidinho de Camarão", "35min", R.drawable.carne1,
@@ -185,16 +186,20 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("receita", receita)
             startActivity( intent )
         }
-        rvReceitas.adapter = receitasAdapter
+        binding.rvReceitas.adapter = receitasAdapter
         receitasAdapter.configurarLista(list)
 
 
 
-        rvReceitas.layoutManager = LinearLayoutManager(this)
+        binding.rvReceitas.layoutManager = LinearLayoutManager(this)
 
-        rvReceitas.addItemDecoration(
+        binding.rvReceitas.addItemDecoration(
             DividerItemDecoration(this, RecyclerView.VERTICAL)
         )
 
     }
+
+
+
+
 }

@@ -23,11 +23,11 @@ class DetalhesActivity : AppCompatActivity() {
 
         inicializarActionBar()
 
-        with( binding ){
+        with(binding) {
 
             val bundle = intent.extras
 
-            if (bundle != null){
+            if (bundle != null) {
 
                 val receita = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
                     bundle.getParcelable("receita", Receita::class.java)
@@ -35,7 +35,7 @@ class DetalhesActivity : AppCompatActivity() {
                     bundle.getParcelable("receita")
                 }
 
-                if (receita != null){
+                if (receita != null) {
 
                     imgDetalhe.setImageDrawable(
                         ContextCompat.getDrawable(applicationContext, receita.resIdImagem)
@@ -47,7 +47,7 @@ class DetalhesActivity : AppCompatActivity() {
                     val listaIngredientes = receita.ingredientes
                     var textoIngredientes = ""
 
-                    for (ingrediente in listaIngredientes){
+                    for (ingrediente in listaIngredientes) {
 
                         textoIngredientes += "- $ingrediente \n"
 
@@ -59,7 +59,7 @@ class DetalhesActivity : AppCompatActivity() {
                     var textoPreparo = ""
                     var contador = 1
 
-                    for (item in listaPreparo){
+                    for (item in listaPreparo) {
 
                         textoPreparo += "$contador - $item \n" + "\n"
                         contador++
@@ -71,32 +71,37 @@ class DetalhesActivity : AppCompatActivity() {
                 }
             }
 
-
         }
-
 
 
     }
 
+
+
     private fun inicializarActionBar() {
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         addMenuProvider(
-            object: MenuProvider{
+            object : MenuProvider {
                 override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
+
                     menuInflater.inflate(R.menu.menu_principal, menu)
                 }
 
                 override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
-                    when (menuItem.itemId) {
-                        R.id.itemSair -> finish()
+                    return when (menuItem.itemId) {
+                        android.R.id.home -> {
+                            onBackPressedDispatcher.onBackPressed()
+                            // finish()
+                            true
+                        }
+                        else -> false
                     }
-                    return true
                 }
 
             }
         )
-
     }
-
 
 }
