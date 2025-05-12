@@ -9,6 +9,6 @@ _**Tela principal (ActivityMain)**_
 
 <img src="https://github.com/SAANDRIN/ImagensConjunto/blob/main/receitas.png?raw=true" width="300"/>
 
-_**Apresentação do resultado (ActivityResultado) - EXEMPLO 1 e 2**_
+_**Tela de detalhes **_
 
 ![Tela de Resultado](https://github.com/SAANDRIN/ImagensConjunto/blob/main/imc_ResultadoActivity.png)
