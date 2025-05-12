@@ -11,4 +11,4 @@ _**Tela principal (ActivityMain)**_
 
 _**Tela de detalhes **_
 
-![Tela de Resultado](https://github.com/SAANDRIN/ImagensConjunto/blob/main/imc_ResultadoActivity.png)
+![Rocambole de carne](https://github.com/SAANDRIN/ImagensConjunto/blob/main/rocambole%20de%20carne%201.png)
