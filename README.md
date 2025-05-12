@@ -7,10 +7,15 @@ _**Imagens Demonstrativas**_
 
 _**Tela principal (ActivityMain)**_
 
-![Rocambole de carne](https://github.com/SAANDRIN/ImagensConjunto/blob/main/receitas.png)
+![Tela Principal](https://github.com/SAANDRIN/ImagensConjunto/blob/main/receitas.png)
 
-<img src="https://github.com/SAANDRIN/ImagensConjunto/blob/main/receitas.png?raw=true" width="300"/>
 
 _**Tela de detalhes **_
 
 ![Rocambole de carne](https://github.com/SAANDRIN/ImagensConjunto/blob/main/rocambole%20de%20carne%201.png)
+
+![Rocambole de carne 02](https://github.com/SAANDRIN/ImagensConjunto/blob/main/rocambole%20de%20carne%201.png)
+
+![Bolinho de chuva](https://github.com/SAANDRIN/ImagensConjunto/blob/main/rocambole%20de%20carne%201.png)
+
+![bolinho de chuva 02](https://github.com/SAANDRIN/ImagensConjunto/blob/main/rocambole%20de%20carne%201.png)
