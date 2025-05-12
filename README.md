@@ -7,7 +7,7 @@ _**Imagens Demonstrativas**_
 
 _**Tela principal (ActivityMain)**_
 
-![Tela Inicial](https://github.com/SAANDRIN/ImagensConjunto/blob/main/imc_mainActivity.png)
+![Tela Inicial](https://github.com/SAANDRIN/ImagensConjunto/blob/main/receitas.png)
 
 _**Apresentação do resultado (ActivityResultado) - EXEMPLO 1 e 2**_
 
