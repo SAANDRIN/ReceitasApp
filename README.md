@@ -5,12 +5,11 @@ _**- Aplicativo criado com o intuito de explorar os componentes de interface, al
 _**Imagens Demonstrativas**_
 
 
-_**Tela principal (ActivityMain)**_
-
 ![Tela Principal](https://github.com/SAANDRIN/ImagensConjunto/blob/main/receitas.png)
 
 
 _**Tela de detalhes **_
+
 
 ![Rocambole de carne](https://github.com/SAANDRIN/ImagensConjunto/blob/main/rocambole%20de%20carne%201.png)
 
