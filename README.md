@@ -16,6 +16,6 @@ _**Tela de detalhes **_
 
 ![Rocambole de carne 02](https://github.com/SAANDRIN/ImagensConjunto/blob/main/rocambole%20de%20carne%202.png)
 
-![Bolinho de chuva](https://github.com/SAANDRIN/ImagensConjunto/blob/main/rocambole%20de%20carne%201.png)
+![Bolinho de chuva](https://github.com/SAANDRIN/ImagensConjunto/blob/main/bolinho%20de%20chuva%201.png)
 
 ![bolinho de chuva 02](https://github.com/SAANDRIN/ImagensConjunto/blob/main/rocambole%20de%20carne%201.png)
