@@ -7,6 +7,8 @@ _**Imagens Demonstrativas**_
 
 _**Tela principal (ActivityMain)**_
 
+![Rocambole de carne](https://github.com/SAANDRIN/ImagensConjunto/blob/main/receitas.png)
+
 <img src="https://github.com/SAANDRIN/ImagensConjunto/blob/main/receitas.png?raw=true" width="300"/>
 
 _**Tela de detalhes **_
